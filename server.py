@@ -66,6 +66,4 @@ while True:
         connectionSocket.close()
         serverSocket.close()
     except Exception as e:
-        message = internalServerError + str(e)
-        connectionSocket.sendall(message.encode())
         connectionSocket.close()
